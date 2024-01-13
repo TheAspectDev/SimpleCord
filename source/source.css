@@ -1,0 +1,109 @@
+:root {
+
+    --base-background: #151516;
+    --text-link: rgb(100,100,255, 0.9);
+    --background-mentioned: rgb(100,100,255, 0.2);
+    --memberbackground: transparent;
+
+    /* Optional */
+    --vc-membercount-background: rgba(255,255,255, 0.1);
+}
+ 
+/* SET BACKGROUND */
+body, .title_b7d661, .chatContent__5dca8, .container_b2ce9c,
+ .members__9f47b, .container_ca50b9, .container__4bde3, .chatTarget__0ea5e, .container_def45c, .content__1a4fe, .userPanelOuter__880e5, .userPanelInner_eddf4c, .sidebar_ded4b5
+ , .privateChannels__93473, .scroller__4b984, .wrapper__3d460, .wrapper__5c5cd, .theme-dark .themed_b152d4, .container__5c7e7, .nowPlayingColumn_f5023f, .container__0a6a9, .itemCard__1f162
+ , .contentRegionScroller__86c79, .sidebarRegionScroller__1fa7e, .contentRegion__0bec1, .container_b181b6, .userPopoutOverlayBackground_d8afa4    {
+    background: var(--base-background)!important
+}
+
+/* REMOVE BACKGROUND */
+
+.sidebar_ded4b5, .container__590e2, .container__7c79d, .base__3e6af, .content__23cab, .appMount_fae9dd,
+ .container__037ed, .baseLayer__8fda3, .layers__1c917, .app_de4237, .app_b1f720, .base__3e6af, .guilds__2b93a, .layers__1c917, .bg__12180, .app_de4237, .app_b1f720, .container__590e2 {
+    background: url(http://127.0.0.1:5500/s.js)!important;    
+}
+
+/*Embed background*/
+.gridContainer_de8cdc, .appMount_fae9dd, .embedWrapper_c143d9   {
+    background-color: rgba(255,255,255, 0.03);
+}
+
+
+/* User background */
+.member_aa4760 {
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: var(--memberbackground);
+}
+
+/* Remove SCrollbar */
+*::-webkit-scrollbar{
+    width: 0px!important;
+}
+
+/*  */
+/* Chat bar Settings */
+.sansAttachButton__996a4 {
+    padding-right: 10px;
+}
+.themedBackground__6b1b6, .channelTextArea__2e60f, .mainCard__8a660, .matchingPostsRow__510be {
+    background-color: rgba(255,255,255,0.02);
+}
+
+.replyBar_b64d74, .container__08420, .clipContainer__99c30 {
+    background-color: #1d1d1f!important;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/*  */
+/*  */
+
+
+/* CHAT */
+/*  */
+
+.message__80c10.mentioned__58017.selected_fd9051, .mouse-mode.full-motion .mentioned__58017 {
+    background-color: var(--background-mentioned);
+}
+.mentioned__58017:before {
+    background-color: rgb(100,100,255, 0.9);
+}
+.message__80c10.mentioned__58017.selected_fd9051, .mouse-mode.full-motion .mentioned__58017:hover {
+    background-color: rgb(100,100,255, 0.1);
+}
+
+/*  */
+/*  */
+
+
+/*  */
+/* OPTIMIZATIONS */
+.inlineMediaEmbed__4270e, .imageContent__24964 {
+    background-color: transparent!important;
+}
+
+.form__13a2c::before, .children__32014::after {
+    display: none;
+}
+
+.content_d67847 {
+    background: var(--base-background)!important
+}
+
+#vc-membercount {
+    background-color: var(--vc-membercount-background);
+    height: 20px;
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    border-radius: 20px;
+}
+.members__9f47b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  */
+/*  */
